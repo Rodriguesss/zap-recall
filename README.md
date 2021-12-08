@@ -2,9 +2,9 @@
 
 Projeto baseado em flashcards que são cartões que contém uma pergunta/afirmação na sua frente e uma resposta atrás. 
 
-## Available Scripts
+## Rodar projeto
 
-In the project directory, you can run:
+Execute o script no seu terminal:
 
 ### `npm run start`
 
