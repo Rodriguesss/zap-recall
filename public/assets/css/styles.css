@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -103,8 +112,17 @@ header {
   align-items: center;
 
   height: 100%;
+  width: 100%;
+
+  padding: 40px;
 
   font-size: 20px;
+  text-align: center;
+
+  word-break: break-all;
+}
+
+.bold {
   font-weight: bold;
 }
 

@@ -3,7 +3,7 @@ import HomeScreen from './HomeScreen/HomeScreen'
 import CardScreen from './CardScreen/CardScreen'
 
 export default function App() {
-  const [page, setPage] = useState(
+  const [componentPage, setComponentPage] = useState(
     {
       homeScreen: <HomeScreen setPage={handleManagePages} />,
       cardScreen: <CardScreen />
@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <>
-      {page[screen]}
+      {componentPage[screen]}
     </>
   )
 }

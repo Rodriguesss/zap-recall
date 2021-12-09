@@ -1,5 +1,5 @@
-export default function Content() {
+export default function Content({ question, answer, flag, css }) {
   return (
-    <h2>O que é JSX?</h2>
+    <h2 className={css}>{flag ? answer : question}</h2>
   )
 }
