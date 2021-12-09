@@ -4,6 +4,10 @@ Projeto baseado em flashcards que são cartões que contém uma pergunta/afirma�
 
 ## Rodar projeto
 
+Após clonar instale a pasta node_modules:
+
+### `npm i`
+
 Execute o script no seu terminal:
 
 ### `npm run start`
