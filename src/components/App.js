@@ -1,14 +1,25 @@
-import HomeScreen from './HomeScreen/HomeScreen'
-
 import { useState } from 'react'
+import HomeScreen from './HomeScreen/HomeScreen'
+import CardScreen from './CardScreen/CardScreen'
 
 export default function App() {
-  // eslint-disable-next-line
-  const [currentPage, setCurrentPage] = useState(HomeScreen())
+  const [page, setPage] = useState(
+    {
+      homeScreen: <HomeScreen setPage={handleManagePages} />,
+      cardScreen: <CardScreen />
+    },
+  )
+
+  const [screen, setScreen] = useState('homeScreen')
+
+  function handleManagePages(currentPage) {
+    setScreen(currentPage)
+  }
 
   return (
     <>
-      {currentPage}
+      {page[screen]}
     </>
   )
 }
+
