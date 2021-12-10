@@ -1,7 +1,9 @@
-export default function Header({ pathImage }) {
+import logoMini from '../../assets/img/logo-mini.png'
+
+export default function Header() {
   return (
     <header>
-      <img src={pathImage} alt="Logo Header" />
+      <img src={logoMini} alt="Logo Header" />
     </header>
   )
 }

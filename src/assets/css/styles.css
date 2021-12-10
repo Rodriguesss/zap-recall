@@ -103,6 +103,9 @@ header {
   display: flex;
   justify-content: flex-end;
 
+  font-size: 18px;
+  font-weight: 500;
+
   padding: 10px;
 }
 
@@ -126,7 +129,7 @@ header {
   font-weight: bold;
 }
 
-.card div {
+.turn {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -136,4 +139,67 @@ header {
 
 .card img {
   cursor: pointer;
+}
+
+.zap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  padding-bottom: 25px;
+}
+
+.zap-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 65px;
+  height: 48px;
+
+  border-radius: 12px;
+
+  font-size: 10px;
+  text-align: center;
+
+  padding: 5px;
+
+  cursor: pointer;
+}
+
+.border {
+  border: 3px solid;
+}
+
+.black {
+  border-color: #000;
+}
+
+.black-shadow {
+  box-shadow: 0px 8px 24px rgb(10, 10, 10);
+}
+
+.red {
+  border-color: red;
+}
+
+.red-shadow {
+  box-shadow: 0px 8px 24px rgba(241, 7, 7, 1);
+}
+
+.green {
+  border-color: green;
+}
+
+.green-shadow {
+  box-shadow: 0px 8px 24px rgb(18, 173, 4);
+}
+
+.yellow {
+  border-color: yellow;
+}
+
+.yellow-shadow {
+  box-shadow: 0px 8px 24px rgb(175, 194, 3);
 }
