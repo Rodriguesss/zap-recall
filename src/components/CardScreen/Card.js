@@ -3,7 +3,7 @@ import Content from './Content'
 import Turn from './Turn'
 import Zap from './Zap'
 
-export default function Card({ flag, turnFlag, setTrigger, question, answer, current, total, css, handleFinishedGame }) {
+export default function Card({ flag, turnFlag, setTrigger, question, answer, current, total, css, setIndice }) {
   return (
     <div className={`card ${css && `border ${css} ${css}-shadow`}`}>
       <Total current={current} total={total} />
@@ -12,7 +12,7 @@ export default function Card({ flag, turnFlag, setTrigger, question, answer, cur
         answer={answer}
         flag={flag}
         css={flag ? '' : 'bold'} />
-      {turnFlag ? <Zap setTrigger={setTrigger} handleFinishedGame={handleFinishedGame} /> : <Turn setTrigger={setTrigger} flag={flag} />}
+      {turnFlag ? <Zap setTrigger={setTrigger} setIndice={setIndice} /> : <Turn setTrigger={setTrigger} flag={flag} />}
     </ div>
   )
 }

@@ -1,6 +1,6 @@
 import ZapItem from "./ZapItem"
 
-export default function Zap({ setTrigger, handleFinishedGame }) {
+export default function Zap({ setTrigger, setIndice }) {
   const zapStatus = [
     { message: 'Aprendi agora', color: 'black', correct: true },
     { message: 'Não lembrei', color: 'red', correct: false },
@@ -12,7 +12,7 @@ export default function Zap({ setTrigger, handleFinishedGame }) {
     <div className="zap">
       {
         zapStatus.map(({ message, color }) => (
-          <ZapItem message={message} color={color} setTrigger={setTrigger} handleFinishedGame={handleFinishedGame} />
+          <ZapItem message={message} color={color} setTrigger={setTrigger} setIndice={setIndice} />
         ))
       }
     </div>

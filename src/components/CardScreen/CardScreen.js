@@ -2,7 +2,7 @@ import Header from '../CardScreen/Header'
 import Card from '../CardScreen/Card'
 import { useState } from 'react'
 
-export default function CardScreen({ data, setGame, handleFinishedGame, game }) {
+export default function CardScreen({ data, setPage, setIndice }) {
   const [count, setCount] = useState(0)
   const [flag, setFlag] = useState(false)
   const [turnFlag, setTurnFlag] = useState(false)
@@ -16,11 +16,7 @@ export default function CardScreen({ data, setGame, handleFinishedGame, game }) 
   }
 
   function checkDataLength() {
-    (count + 1) === data.length ? finishedGameScreen() : setCount(count + 1)
-  }
-
-  function finishedGameScreen() {
-    setGame()
+    (count + 1) === data.length ? setPage('finishedGameScreen') : setCount(count + 1)
   }
 
   function changeCount() {
@@ -55,7 +51,7 @@ export default function CardScreen({ data, setGame, handleFinishedGame, game }) 
         current={count + 1}
         total={data.length}
         css={css}
-        handleFinishedGame={handleFinishedGame} />
+        setIndice={setIndice} />
     </div>
   )
 }

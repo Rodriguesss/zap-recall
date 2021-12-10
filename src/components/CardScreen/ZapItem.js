@@ -1,8 +1,8 @@
-export default function ZapItem({ message, color, setTrigger, handleFinishedGame }) {
+export default function ZapItem({ message, color, setTrigger, setIndice }) {
 
   function checkZap() {
     setTrigger('zap', color)
-    color === 'red' && handleFinishedGame('finishedGameScreen2')
+    color === 'red' && setIndice(1)
   }
 
   return (
