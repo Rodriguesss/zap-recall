@@ -5,7 +5,7 @@ import Zap from './Zap'
 
 export default function Card({ flag, turnFlag, setTrigger, question, answer, current, total, css, setIndice }) {
   return (
-    <div className={`card ${css && `border ${css} ${css}-shadow`}`}>
+    <div className={`card ${css && `border ${css} ${css}-shadow`}`} data-identifier="flashcard">
       <Total current={current} total={total} />
       <Content
         question={question}

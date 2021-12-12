@@ -38,3 +38,10 @@ export const finishedData = [
   { title: 'PARABÉNS!', message: 'Você não esqueceu de nenhum flashcard!', win: true },
   { title: 'Putz..', message: 'Você esqueceu alguns flashcards.. Não desanime! Na próxima você consegue!', win: false }
 ]
+
+export const zapStatus = [
+  { message: 'Aprendi agora', color: 'black', correct: true },
+  { message: 'Não lembrei', color: 'red', correct: false },
+  { message: 'Lembrei com esforço', color: 'green', correct: true },
+  { message: 'Zap!', color: 'yellow', correct: true }
+]

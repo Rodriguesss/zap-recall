@@ -1,5 +1,5 @@
 export default function Total({ current, total }) {
   return (
-    <h1>{current} / {total}</h1>
+    <h1 data-identifier="counter">{current}/{total}</h1>
   )
 }

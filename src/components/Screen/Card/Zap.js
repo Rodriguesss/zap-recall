@@ -1,13 +1,7 @@
 import ZapItem from "./ZapItem"
+import { zapStatus } from "../../../database/seed"
 
 export default function Zap({ setTrigger, setIndice }) {
-  const zapStatus = [
-    { message: 'Aprendi agora', color: 'black', correct: true },
-    { message: 'Não lembrei', color: 'red', correct: false },
-    { message: 'Lembrei com esforço', color: 'green', correct: true },
-    { message: 'Zap!', color: 'yellow', correct: true }
-  ]
-
   return (
     <div className="zap">
       {
