@@ -1,27 +1,29 @@
-import { useState } from 'react'
 import next from '../../assets/img/next.png'
 
-export default function ButtonStart({ text, setPage, value, reset,
-  setDataIndex, setCount }) {
-
-  const [showError, setShowError] = useState(false)
+export default function Button({ text, setPage, value, reset,
+  setFinishedDataIndex, setCount, setDeck, deck, setValue, setShowError }) {
   let error
 
   function checkInputValue() {
     error = (value < 2)
-    error ? setShowError(error) : setPage('card')
+    error ? setShowError(error) : defineDeck()
+  }
+
+  function defineDeck() {
+    setDeck(deck)
+    setPage('card')
   }
 
   function restart() {
     error = false
-    setDataIndex(0)
+    setFinishedDataIndex(0)
     setCount(0)
+    setValue(0)
     setPage('home')
   }
 
   return (
     <>
-      {showError && <p className="msgError">Deve ter no minímo 2 zaps</p>}
       <button className="buttonStart" onClick={reset ? restart : checkInputValue}
         data-identifier="start-zap-recall">
         {text}

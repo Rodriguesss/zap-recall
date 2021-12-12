@@ -3,7 +3,10 @@ import Card from './Card'
 import { useState } from 'react'
 import Container from '../../Generic/Container'
 
-export default function CardScreen({ data, setPage, setDataIndex, value, c, setC }) {
+export default function Index({ deck, setPage, setFinishedDataIndex, value,
+  c, setC }) {
+
+  const { data } = deck
   const [count, setCount] = useState(0)
   const [flag, setFlag] = useState(false)
   const [turnFlag, setTurnFlag] = useState(false)
@@ -44,6 +47,7 @@ export default function CardScreen({ data, setPage, setDataIndex, value, c, setC
     <div className="game">
       <Header />
       <Container>
+        <p class="title">{deck.name}</p>
         <Card
           flag={flag}
           turnFlag={turnFlag}
@@ -53,7 +57,7 @@ export default function CardScreen({ data, setPage, setDataIndex, value, c, setC
           current={count + 1}
           total={data.length}
           css={css}
-          setDataIndex={setDataIndex}
+          setFinishedDataIndex={setFinishedDataIndex}
           value={value}
           count={c}
           setCount={setC} />

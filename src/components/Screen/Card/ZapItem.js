@@ -1,28 +1,23 @@
-import { useState } from 'react'
-
-export default function ZapItem({ message, color, setTrigger, setDataIndex, value,
-  count, setCount }) {
+export default function ZapItem({ message, color, setTrigger,
+  setFinishedDataIndex, value, count, setCount }) {
 
   function checkZap() {
-    console.log('count: ', count)
-    console.log('value: ', value)
-
     setTrigger('zap', color)
     addCount()
-    showLoser()
+    showWin()
   }
 
   function addCount() {
     color === 'yellow' && checkLastZap()
   }
 
-  function checkLastZap() {
-    (value - 1) === count && setDataIndex(1)
-    setCount(count + 1)
+  function showWin() {
+    count >= value && setFinishedDataIndex(1)
   }
 
-  function showLoser() {
-    count >= value && setDataIndex(1)
+  function checkLastZap() {
+    (value - 1) === count && setFinishedDataIndex(1)
+    setCount(count + 1)
   }
 
   return (
