@@ -6,7 +6,7 @@ import Container from '../../Generic/Container'
 export default function Index({ deck, setPage, setFinishedDataIndex, value,
   c, setC }) {
 
-  const { data } = deck
+  const { data, name } = deck
   const [count, setCount] = useState(0)
   const [flag, setFlag] = useState(false)
   const [turnFlag, setTurnFlag] = useState(false)
@@ -47,7 +47,7 @@ export default function Index({ deck, setPage, setFinishedDataIndex, value,
     <div className="game">
       <Header />
       <Container>
-        <p class="title">{deck.name}</p>
+        <p class="title">{name}</p>
         <Card
           flag={flag}
           turnFlag={turnFlag}
