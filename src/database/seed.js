@@ -63,8 +63,8 @@ export const finishedData = [
 ]
 
 export const zapStatus = [
-  { message: 'Aprendi agora', color: 'black', correct: true },
-  { message: 'Não lembrei', color: 'red', correct: false },
-  { message: 'Lembrei com esforço', color: 'green', correct: true },
-  { message: 'Zap!', color: 'yellow', correct: true }
+  { message: 'Aprendi agora', color: 'black' },
+  { message: 'Não lembrei', color: 'red' },
+  { message: 'Lembrei com esforço', color: 'green' },
+  { message: 'Zap!', color: 'yellow' }
 ]
