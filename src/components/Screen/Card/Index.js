@@ -3,7 +3,7 @@ import Card from './Card'
 import { useState } from 'react'
 import Container from '../../Generic/Container'
 
-export default function CardScreen({ data, setPage, setIndice }) {
+export default function CardScreen({ data, setPage, setDataIndex, value, c, setC }) {
   const [count, setCount] = useState(0)
   const [flag, setFlag] = useState(false)
   const [turnFlag, setTurnFlag] = useState(false)
@@ -53,7 +53,10 @@ export default function CardScreen({ data, setPage, setIndice }) {
           current={count + 1}
           total={data.length}
           css={css}
-          setIndice={setIndice} />
+          setDataIndex={setDataIndex}
+          value={value}
+          count={c}
+          setCount={setC} />
       </Container>
     </div>
   )

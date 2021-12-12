@@ -4,7 +4,7 @@ import Turn from './Turn'
 import Zap from './Zap'
 
 export default function Card({ flag, turnFlag, setTrigger, question, answer,
-  current, total, css, setIndice }) {
+  current, total, css, setDataIndex, value, count, setCount }) {
   return (
     <div className={`card ${css && `border ${css} ${css}-shadow`}`}
       data-identifier="flashcard">
@@ -14,7 +14,9 @@ export default function Card({ flag, turnFlag, setTrigger, question, answer,
         answer={answer}
         flag={flag}
         css={flag ? '' : 'bold'} />
-      {turnFlag ? <Zap setTrigger={setTrigger} setIndice={setIndice} />
+      {turnFlag
+        ? <Zap setTrigger={setTrigger} setDataIndex={setDataIndex} value={value}
+          count={count} setCount={setCount} />
         : <Turn setTrigger={setTrigger} flag={flag} />}
     </ div>
   )

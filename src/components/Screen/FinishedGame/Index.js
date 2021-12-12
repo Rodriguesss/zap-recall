@@ -7,7 +7,7 @@ export default function Index({ data: { title, message, win } }) {
   return (
     <Container>
       <Header />
-      <div class="finish">
+      <div className="finish">
         <Title title={title} win={win} />
         <Message message={message} />
       </div>
