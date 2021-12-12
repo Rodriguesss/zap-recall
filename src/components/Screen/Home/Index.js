@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import Logo from './Logo'
 import InputZap from './InputZap'
-import ButtonStart from './ButtonStart'
+import ButtonStart from '../../Generic/ButtonStart'
 
 export default function Index({ setPage, value, setValue }) {
   return (
@@ -10,7 +10,8 @@ export default function Index({ setPage, value, setValue }) {
       <Logo />
       <div>
         <InputZap setValue={setValue} />
-        <ButtonStart text="Praticar React" setPage={setPage} value={value} />
+        <ButtonStart text="Praticar React" setPage={setPage} value={value}
+          reset={false} />
       </div>
     </div>
   )

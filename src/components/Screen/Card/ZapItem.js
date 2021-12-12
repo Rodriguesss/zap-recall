@@ -13,8 +13,12 @@ export default function ZapItem({ message, color, setTrigger, setDataIndex, valu
   }
 
   function addCount() {
-    color === 'yellow'
-      && setCount(count + 1); (value - 1) === count && setDataIndex(1)
+    color === 'yellow' && checkLastZap()
+  }
+
+  function checkLastZap() {
+    (value - 1) === count && setDataIndex(1)
+    setCount(count + 1)
   }
 
   function showLoser() {

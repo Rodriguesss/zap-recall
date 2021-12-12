@@ -7,7 +7,7 @@ export default function Zap({ setTrigger, setDataIndex, value, count, setCount }
       {
         zapStatus.map(({ message, color }) => (
           <ZapItem message={message} color={color} setTrigger={setTrigger}
-            value={value} setDataIndex={setDataIndex} count={count}
+            setDataIndex={setDataIndex} value={value} count={count}
             setCount={setCount} />
         ))
       }
