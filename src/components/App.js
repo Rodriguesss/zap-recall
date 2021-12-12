@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import HomeScreen from './HomeScreen/HomeScreen'
-import CardScreen from './CardScreen/CardScreen'
-import FinishedGameScreen from './FinishedGameScreen/FinishedGameScreen'
-import { data, finishedData } from './Data/Data'
+import Home from './Screen/Home/Index'
+import Card from './Screen/Card/Index'
+import FinishedGame from './Screen/FinishedGame/Index'
+import { data, finishedData } from '../database/Data'
 
 export default function App() {
   const [indice, setIndice] = useState(0)
@@ -13,12 +13,12 @@ export default function App() {
 
   const componentPage =
   {
-    homeScreen: <HomeScreen setPage={handleManagePages} />,
-    cardScreen: <CardScreen data={data} setPage={handleManagePages} setIndice={setIndice} />,
-    finishedGameScreen: <FinishedGameScreen data={finishedData[indice]} />,
+    home: <Home setPage={handleManagePages} />,
+    card: <Card data={data} setPage={handleManagePages} setIndice={setIndice} />,
+    finishedGame: <FinishedGame data={finishedData[indice]} />,
   }
 
-  const [screen, setScreen] = useState('homeScreen')
+  const [screen, setScreen] = useState('home')
 
   return (
     <>

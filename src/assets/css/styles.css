@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -67,7 +68,7 @@ body {
   cursor: pointer;
 }
 
-.game {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,4 +203,19 @@ header {
 
 .yellow-shadow {
   box-shadow: 0px 8px 24px rgb(175, 194, 3);
+}
+
+.finish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.finish p {
+  font-size: 20px;
+}
+
+.finish h1 {
+  margin: 0;
 }

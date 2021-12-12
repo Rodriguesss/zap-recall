@@ -1,6 +1,7 @@
-import Header from '../CardScreen/Header'
-import Card from '../CardScreen/Card'
+import Header from '../../Generic/Header'
+import Card from './Card'
 import { useState } from 'react'
+import Container from '../../Generic/Container'
 
 export default function CardScreen({ data, setPage, setIndice }) {
   const [count, setCount] = useState(0)
@@ -16,7 +17,7 @@ export default function CardScreen({ data, setPage, setIndice }) {
   }
 
   function checkDataLength() {
-    (count + 1) === data.length ? setPage('finishedGameScreen') : setCount(count + 1)
+    (count + 1) === data.length ? setPage('finishedGame') : setCount(count + 1)
   }
 
   function changeCount() {
@@ -42,16 +43,18 @@ export default function CardScreen({ data, setPage, setIndice }) {
   return (
     <div className="game">
       <Header />
-      <Card
-        flag={flag}
-        turnFlag={turnFlag}
-        setTrigger={handleTriggerChange}
-        question={data[count].question}
-        answer={data[count].answer}
-        current={count + 1}
-        total={data.length}
-        css={css}
-        setIndice={setIndice} />
+      <Container>
+        <Card
+          flag={flag}
+          turnFlag={turnFlag}
+          setTrigger={handleTriggerChange}
+          question={data[count].question}
+          answer={data[count].answer}
+          current={count + 1}
+          total={data.length}
+          css={css}
+          setIndice={setIndice} />
+      </Container>
     </div>
   )
 }

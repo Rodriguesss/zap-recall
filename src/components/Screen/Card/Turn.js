@@ -1,4 +1,4 @@
-import turn from '../../assets/img/turn.png'
+import turn from '../../../assets/img/turn.png'
 
 export default function Turn({ setTrigger, flag }) {
   return (

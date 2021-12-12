@@ -35,6 +35,6 @@ export const data = [
 ]
 
 export const finishedData = [
-  { title: 'Parabéns!', message: 'Você não esqueceu de nenhum flashcard!' },
-  { title: 'Putz..', message: 'Você esqueceu alguns flashcards.. Não desanime! Na próxima você consegue!' }
+  { title: 'PARABÉNS!', message: 'Você não esqueceu de nenhum flashcard!', win: true },
+  { title: 'Putz..', message: 'Você esqueceu alguns flashcards.. Não desanime! Na próxima você consegue!', win: false }
 ]

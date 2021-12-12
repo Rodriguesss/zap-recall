@@ -2,7 +2,7 @@ import Logo from './Logo'
 import InputZap from './InputZap'
 import ButtonStart from './ButtonStart'
 
-export default function HomeScreen({ setPage }) {
+export default function Index({ setPage }) {
   return (
     <div className="container">
       <Logo />
