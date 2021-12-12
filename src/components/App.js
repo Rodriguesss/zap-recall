@@ -1,7 +1,9 @@
 import { useState } from 'react'
+
 import Home from './Screen/Home/Index'
 import Card from './Screen/Card/Index'
 import FinishedGame from './Screen/FinishedGame/Index'
+
 import { data, finishedData } from '../database/seed'
 
 export default function App() {
@@ -26,4 +28,3 @@ export default function App() {
     </>
   )
 }
-

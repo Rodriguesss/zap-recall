@@ -6,7 +6,8 @@ export default function Zap({ setTrigger, setIndice }) {
     <div className="zap">
       {
         zapStatus.map(({ message, color }) => (
-          <ZapItem message={message} color={color} setTrigger={setTrigger} setIndice={setIndice} />
+          <ZapItem message={message} color={color} setTrigger={setTrigger}
+            setIndice={setIndice} />
         ))
       }
     </div>
