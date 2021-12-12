@@ -21,5 +21,4 @@ Execute o script no seu terminal:
 
 ### Deployment
 
-Não foi feito o deploy ainda.
-
+https://zap-recall-rodriguesss.vercel.app/
