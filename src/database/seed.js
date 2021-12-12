@@ -41,17 +41,16 @@ export const decks = [
     name: 'Javascript',
     data: [
       {
-        question: 'O que é Javascript?',
-        answer: `Uma extensão de linguagem do JavaScriptsdkfslçdfsl
-      ssssssssssssssssssssssssssssssssssssssssssssssssssss d`
+        question: 'Para acessar um elemento HTML de JavaScript, você pode usar qual método',
+        answer: `getElementById`
       },
       {
-        question: 'O React é __',
-        answer: `uma biblioteca JavaScript para construção de interfaces`
+        question: `Separa as declarações javascript, adicionando ao final de cada instrução executável.. Torna possível escrever muitas instruções em uma linha.`,
+        answer: `;`
       },
       {
-        question: 'Componentes devem iniciar com __',
-        answer: `letra maiúscula`
+        question: 'Quais são os 2 valores que os booleanos podem ter?',
+        answer: `True e Falso`
       },
     ]
   }

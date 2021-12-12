@@ -18,9 +18,11 @@ export default function App() {
 
   let home = <Home setPage={handleManagePages} value={value} setValue={setValue}
     setDeck={setDeck} />
+
   let card = <Card deck={decks[deck]} setPage={handleManagePages}
     setFinishedDataIndex={setFinishedDataIndex} value={value} c={count}
     setC={setCount} />
+
   let finishedGame = <FinishedGame data={finishedData[finishedDataIndex]}
     setPage={handleManagePages} setFinishedDataIndex={setFinishedDataIndex}
     setCount={setCount} setValue={setValue} />
