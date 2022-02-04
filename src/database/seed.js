@@ -4,8 +4,7 @@ export const decks = [
     data: [
       {
         question: 'O que é JSX?',
-        answer: `Uma extensão de linguagem do JavaScriptsdkfslçdfsl
-      ssssssssssssssssssssssssssssssssssssssssssssssssssss d`
+        answer: `Uma extensão de linguagem do JavaScript`
       },
       {
         question: 'O React é __',
